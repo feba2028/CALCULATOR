@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <table class = "calculator" >
+        <h2>CALCULATOR</h2>
+        <tr>
+        <td colspan = "3"> <input class = "display-box" type = "text" id = "result" /> </td>
+        <td> <input class = "button" type = "button" value = "C" onclick = "clearBox()" style = "background-color: green;" /> </td>
+        </tr>
+
+        <tr>
+        <td> <input class = "button" type = "button" value = "1" onclick = "displayValue('1')" /> </td>
+        <td> <input class = "button" type = "button" value = "2" onclick = "displayValue('2')" /> </td>
+        <td> <input class = "button" type = "button" value = "3" onclick = "displayValue('3')" /> </td>
+        <td> <input class = "button" type = "button" value = "<" onclick = "backSpace()"/></td>
+        </tr>
+
+        <tr>
+        <td> <input class = "button" type = "button" value = "4" onclick = "displayValue('4')" /> </td>
+        <td> <input class = "button" type = "button" value = "5" onclick = "displayValue('5')" /> </td>
+        <td> <input class = "button" type = "button" value = "6" onclick = "displayValue('6')" /> </td>
+        <td> <input class = "button" type = "button" value = "-" onclick = "displayValue('-')" /> </td>
+        </tr>
+
+        <tr>
+        <td> <input class = "button" type = "button" value = "7" onclick = "displayValue('7')" /> </td>
+        <td> <input class = "button" type = "button" value = "8" onclick = "displayValue('8')" /> </td>
+        <td> <input class = "button" type = "button" value = "9" onclick = "displayValue('9')" /> </td>
+        <td> <input class = "button" type = "button" value = "+" onclick = "displayValue('+')" /> </td>
+        </tr>
+
+        <tr>
+        <td> <input class = "button" type = "button" value = "." onclick = "displayValue('.')" /> </td>
+        <td> <input class = "button" type = "button" value = "0" onclick = "displayValue('0')" /> </td>
+        <td> <input class = "button" type = "button" value = "=" onclick = "evaluateExpression()"  /> </td>
+        <td> <input class = "button" type = "button" value = "x" onclick = "displayValue('*')" /> </td>
+        </tr>
+
+        <tr>
+        <td> <input class = "button" type = "button" value = "(" onclick = "displayValue('(')" /> </td>
+        <td> <input class = "button" type = "button" value = ")" onclick = "displayValue(')')" /> </td>
+        <td> <input class = "button" type = "button" value = "^" onclick = "displayValue('^')" /> </td>
+        <td> <input class = "button" type = "button" value = "/" onclick = "displayValue('/')" /> </td>
+        </tr>
+
+        </table>
+       </body>
+       <script src="./script.js"></script>
+       </html>
+</body>
+</html>
